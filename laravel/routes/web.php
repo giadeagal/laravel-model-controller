@@ -17,14 +17,7 @@ Route::get('/', "HomeController@home")->name("to-home");
 
 Route::get('/characters', "HomeController@characters")->name("to-characters");
 
-Route::get('/comics', function () {
-
-    $comics = config("comics");
-
-    $data = ["comics" => $comics];
-
-    return view('comics', $data);
-})->name("to-comics");
+Route::get('/comics', "ComicController@comics")->name("to-comics");
 
 Route::get('/movies', "HomeController@movies")->name("to-movies");
 
@@ -42,10 +35,4 @@ Route::get('/news', "HomeController@news")->name("to-news");
 
 Route::get('/shop', "HomeController@shop")->name("to-shop");
 
-Route::get('/detail/{id}', function ($id) {
-    $comics = config("comics");
-
-    $data = ["comic" => $comics[$id]];
-
-    return view('detail', $data);
-})->name("to-detail");
+Route::get('/detail/{id}', "ComicController@show")->name("to-detail");
