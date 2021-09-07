@@ -61,3 +61,7 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name("to-shop");
+
+Route::get('/detail/{id}', function () {
+    return view('detail');
+})->name("to-detail");
