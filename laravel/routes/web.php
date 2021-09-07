@@ -13,13 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name("to-home");
+Route::get('/', "HomeController@home")->name("to-home");
 
-Route::get('/characters', function () {
-    return view('characters');
-})->name("to-characters");
+Route::get('/characters', "HomeController@characters")->name("to-characters");
 
 Route::get('/comics', function () {
 
@@ -30,37 +26,21 @@ Route::get('/comics', function () {
     return view('comics', $data);
 })->name("to-comics");
 
-Route::get('/movies', function () {
-    return view('movies');
-})->name("to-movies");
+Route::get('/movies', "HomeController@movies")->name("to-movies");
 
-Route::get('/tv', function () {
-    return view('tv');
-})->name("to-tv");
+Route::get('/tv', "HomeController@tv")->name("to-tv");
 
-Route::get('/games', function () {
-    return view('games');
-})->name("to-games");
+Route::get('/games', "HomeController@games")->name("to-games");
 
-Route::get('/collectibles', function () {
-    return view('collectibles');
-})->name("to-collectibles");
+Route::get('/collectibles', "HomeController@collectibles")->name("to-collectibles");
 
-Route::get('/videos', function () {
-    return view('videos');
-})->name("to-videos");
+Route::get('/videos', "HomeController@videos")->name("to-videos");
 
-Route::get('/fans', function () {
-    return view('fans');
-})->name("to-fans");
+Route::get('/fans', "HomeController@fans")->name("to-fans");
 
-Route::get('/news', function () {
-    return view('news');
-})->name("to-news");
+Route::get('/news', "HomeController@news")->name("to-news");
 
-Route::get('/shop', function () {
-    return view('shop');
-})->name("to-shop");
+Route::get('/shop', "HomeController@shop")->name("to-shop");
 
 Route::get('/detail/{id}', function ($id) {
     $comics = config("comics");

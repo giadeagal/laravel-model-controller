@@ -4,10 +4,11 @@
 
 @section("content")
 
+    <div class="detail-container">
     <h2>{{ $comic["title"] }}</h2>
-    <img src="{{ $comic["thumb"] }}" alt="">
+    <img class="detail" src="{{ $comic["thumb"] }}" alt="{{ $comic["title"] }}" title="{{ $comic["title"] }}">
     <p>{{ $comic["price"] }}</p>
-    <p>{{ $comic["description"] }}</p>
-    
+    <p id="desc">{{ $comic["description"] }}</p>
     </div>
+    
 @endsection

@@ -109,3 +109,18 @@ a:hover h3 {
   display: inline;
 }
 
+main {
+  min-height: 100vh;
+}
+
+.detail-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
