@@ -16,7 +16,6 @@
     z-index: 1;
     transition: 500ms;
     transform: scale(1.5);
-    cursor: pointer;
 }
 
 .card:hover img {
@@ -29,7 +28,12 @@ h3 {
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+
+    &:hover {
+        cursor: pointer;
+    }
 }
+
 
 .card:hover h3 {
     z-index: 1;
