@@ -1,0 +1,10 @@
+.card-container {
+    width: 80%;
+    margin: auto;
+}
+
+.card  {
+    display: inline-block;
+    width: 40px;
+    width: calc(100% / 6);
+}
