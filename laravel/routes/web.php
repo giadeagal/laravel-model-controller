@@ -62,6 +62,10 @@ Route::get('/shop', function () {
     return view('shop');
 })->name("to-shop");
 
-Route::get('/detail/{id}', function () {
-    return view('detail');
+Route::get('/detail/{id}', function ($id) {
+    $comics = config("comics");
+
+    $data = ["comic" => $comics[$id]];
+
+    return view('detail', $data);
 })->name("to-detail");

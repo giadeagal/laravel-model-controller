@@ -4,8 +4,10 @@
 
 @section("content")
 
-    {{-- titolo: <h3></h3>  --}}
-    {{-- immagine: <img src="" alt=""> --}}
-    {{-- descrizione:<p></p> --}}
-
+    <h2>{{ $comic["title"] }}</h2>
+    <img src="{{ $comic["thumb"] }}" alt="">
+    <p>{{ $comic["price"] }}</p>
+    <p>{{ $comic["description"] }}</p>
+    
+    </div>
 @endsection

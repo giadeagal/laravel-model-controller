@@ -94,10 +94,18 @@ h3:hover {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: #0c7cec;
+}
+
+a:hover h3 {
+  color: white;
+}
+
 .card:hover h3 {
   z-index: 1;
   transition: 300ms;
-  color: #0c7cec;
   display: inline;
 }
 
