@@ -8,7 +8,7 @@
         <div class="card">
 
             
-            <a href="{{ route("to-detail", ["id" => $comic->id]) }}"> 
+            <a href="{{ route('to-detail', ['id' => $comic->id]) }}"> 
                 <h3>{{ $comic['title'] }}</h3>
             </a>
             <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" title="{{ $comic->title }}">
