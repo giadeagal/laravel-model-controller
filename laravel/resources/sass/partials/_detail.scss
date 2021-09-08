@@ -3,13 +3,21 @@ main {
 }
 
 .detail-container {
+
     width: 80%;
+    margin:auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly ;
+
+    img {
+        max-width: 300px;
+        padding: 20px 0;
+    }
+
+    p {
+        padding: 20px 0;
+    }
 }
 
-h2,
-p {
-    text-align: center;
-}
 

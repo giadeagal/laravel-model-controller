@@ -9,6 +9,15 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding-right: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
 
 }
   .bottom {

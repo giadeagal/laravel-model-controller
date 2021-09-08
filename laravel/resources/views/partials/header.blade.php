@@ -1,6 +1,6 @@
 <header>
     <div class="top">
-        header - sezione top
+        <a href="{{route('to-shop')}}"><strong>shop</strong></a>
     </div>
 
     <div class="bottom">

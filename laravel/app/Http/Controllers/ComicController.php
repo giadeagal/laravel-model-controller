@@ -10,18 +10,21 @@ class ComicController extends Controller
     public function comics() {
 
         $comics = Comic::all();
+        // dd($comics);
 
         // $comics = config("comics");
     
         // $data = ["comics" => $comics];
     
-        // return view('comics', $data);
+        return view('comics', compact("comics"));
     }
     
     public function show($id) {
-        $comics = config("comics");
+
+        $comic = Comic::where("id", $id)->first();
+        // $comics = config("comics");
     
-        $data = ["comic" => $comics[$id]];
+        $data = ["comic" => $comic];
     
         return view('detail', $data);
     }

@@ -24,6 +24,15 @@ header .top {
   justify-content: flex-end;
   align-items: center;
   padding-right: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header .top a {
+  text-decoration: none;
+  color: white;
 }
 
 header .bottom {
@@ -115,12 +124,18 @@ main {
 
 .detail-container {
   width: 80%;
+  margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
-h2,
-p {
-  text-align: center;
+.detail-container img {
+  max-width: 300px;
+  padding: 20px 0;
+}
+
+.detail-container p {
+  padding: 20px 0;
 }
 
